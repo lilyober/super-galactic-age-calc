@@ -10,6 +10,6 @@ describe('AgeCalc', () => {
         expect(earthAge.age).toEqual(35);
     });
     test('should calculate age on Earth to age on Mercury', () => {
-        expect(earthAge.mercury()).toEqual(145.83)
+        expect(earthAge.mercury()).toBeCloseTo(145.83)
     });
 });

@@ -4,7 +4,7 @@ export default class AgeCalc {
     }
 
     mercury () {
-        
+        return this.age / .24;
     }
 
 }
