@@ -16,6 +16,6 @@ export default class AgeCalc {
     }
 
     jupiter () {
-        
+        return this.age / 11.86;
     }
 }
