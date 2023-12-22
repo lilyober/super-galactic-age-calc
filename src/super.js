@@ -3,4 +3,8 @@ export default class AgeCalc {
         this.age = age;
     }
 
+    mercury () {
+        
+    }
+
 }
