@@ -9,7 +9,13 @@ describe('AgeCalc', () => {
     test('should create a class object for age on Earth', () => {
         expect(earthAge.age).toEqual(35);
     });
+
     test('should calculate age on Earth to age on Mercury', () => {
         expect(earthAge.mercury()).toBeCloseTo(145.83)
     });
+
+    test('should calculate age on Earth to age on Venus', () => {
+        expect(earthAge.venus()).toBeCloseTo(56.45)
+    });
+    
 });
