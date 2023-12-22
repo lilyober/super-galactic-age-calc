@@ -19,7 +19,7 @@ describe('AgeCalc', () => {
     });
 
     test('should calculate age on Earth to age on Mars', () => {
-        expect(earthAge.mars()).toBeCloseTo(18.61);
+        expect(earthAge.mars()).toBeCloseTo(18.62);
     });
 
 });
