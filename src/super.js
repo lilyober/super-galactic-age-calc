@@ -8,7 +8,8 @@ export default class AgeCalc {
     }
 
     venus () {
-        
+        return this.age / .62;
     }
+
 
 }
