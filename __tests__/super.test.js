@@ -22,4 +22,8 @@ describe('AgeCalc', () => {
         expect(earthAge.mars()).toBeCloseTo(18.62);
     });
 
+    test('should calculate age on Earth to age on Jupiter', () => {
+        expect(earthAge.jupiter()).toBeCloseTo(2.95);
+    });
+
 });
