@@ -11,5 +11,8 @@ export default class AgeCalc {
         return this.age / .62;
     }
 
+    mars () {
+       
+    }
 
 }
