@@ -3,19 +3,24 @@ export default class AgeCalc {
         this.age = age;
     }
 
-    mercury () {
+    mercury() {
         return this.age / .24;
     }
 
-    venus () {
+    venus() {
         return this.age / .62;
     }
 
-    mars () {
-       return this.age / 1.88;
+    mars() {
+        return this.age / 1.88;
     }
 
-    jupiter () {
+    jupiter() {
         return this.age / 11.86;
     }
+
+    yearsPassed() {
+
+    }
+
 }

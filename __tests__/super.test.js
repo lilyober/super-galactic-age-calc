@@ -4,7 +4,7 @@
 import AgeCalc from '../src/super.js';
 
 describe('AgeCalc', () => {
-    const earthAge = new AgeCalc(35);
+    let earthAge = new AgeCalc(35);
 
     test('should create a class object for age on Earth', () => {
         expect(earthAge.age).toEqual(35);
@@ -24,6 +24,14 @@ describe('AgeCalc', () => {
 
     test('should calculate age on Earth to age on Jupiter', () => {
         expect(earthAge.jupiter()).toBeCloseTo(2.95);
+    });
+
+    test('should calculate number of years passed on each planet since last birthday', () => {
+        let passedAge = earthAge - 25;
+        expect(earthAge.yearsPassed()).toBeCloseTo(41);
+        expect(earthAge.yearsPassed()).toBeCloseTo(16.13);
+        expect(earthAge.yearsPassed()).toBeCloseTo(5.32);
+        expect(earthAge.yearsPassed()).toBeCloseTo(0.84);
     });
 
 });
