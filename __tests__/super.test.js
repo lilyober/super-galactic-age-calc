@@ -26,12 +26,9 @@ describe('AgeCalc', () => {
         expect(earthAge.jupiter()).toBeCloseTo(2.95);
     });
 
-    test('should calculate number of years passed on each planet since last birthday', () => {
-        let passedAge = earthAge - 25;
-        expect(earthAge.yearsPassed()).toBeCloseTo(41);
-        expect(earthAge.yearsPassed()).toBeCloseTo(16.13);
-        expect(earthAge.yearsPassed()).toBeCloseTo(5.32);
-        expect(earthAge.yearsPassed()).toBeCloseTo(0.84);
+    test('should calculate number of years passed since last birthday', () => {
+        let passedAge = new AgeCalc(25);
+        expect(passedAge.ageDifference()).toEqual(10);
     });
 
 });

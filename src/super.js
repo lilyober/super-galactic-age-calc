@@ -19,7 +19,7 @@ export default class AgeCalc {
         return this.age / 11.86;
     }
 
-    yearsPassed() {
+    ageDifference() {
 
     }
 
