@@ -44,7 +44,9 @@ export default class AgeCalc {
     }
 
     ageDiffJupiter() {
-        
+        let passedAge = 25;
+        let diff = this.age - passedAge;
+        return diff / 11.86;
     }
 
 }
