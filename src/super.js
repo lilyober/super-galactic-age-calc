@@ -50,7 +50,9 @@ export default class AgeCalc {
     }
 
     toPass() {
-      
+      let futureAge = 50;
+      let yearsUntil = futureAge - this.age;
+      return yearsUntil;
     }
 
 }
