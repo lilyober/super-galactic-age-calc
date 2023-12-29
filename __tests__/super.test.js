@@ -40,4 +40,8 @@ describe('AgeCalc', () => {
         expect(earthAge.ageDiffVenus()).toBeCloseTo(16.13);
     });
 
+    test('should calculate number of years passed since last birthday on Mars', () => {
+        expect(earthAge.ageDiffMars()).toBeCloseTo(5.32);
+    });
+
 });
