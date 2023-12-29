@@ -55,4 +55,8 @@ export default class AgeCalc {
       return yearsUntil;
     }
 
+    toPassMercury() {
+        
+    }
+
 }

@@ -7,6 +7,9 @@ describe('AgeCalc', () => {
     let earthAge = new AgeCalc(35);
     let passedAge = new AgeCalc(25);
     let diff = earthAge - passedAge;
+    let futureAge = new AgeCalc(50);
+    let yearsUntil = futureAge - earthAge;
+
 
     test('should create a class object for age on Earth', () => {
         expect(earthAge.age).toEqual(35);
@@ -49,9 +52,11 @@ describe('AgeCalc', () => {
     });
 
     test('should calculate number of years to pass until future birthday on Earth', () => {
-        let futureAge = new AgeCalc(50);
-        let yearsUntil = futureAge - earthAge;
         expect(earthAge.toPass()).toEqual(15);
+    });
+
+    test('should calculate number of years to pass until future birthday on Mercury', () => {
+        expect(earthAge.toPassMercury()).toEqual(62.5);
     });
 
 });
