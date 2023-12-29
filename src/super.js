@@ -25,4 +25,8 @@ export default class AgeCalc {
         return diff;
     }
 
+    ageDiffMercury (){
+        
+    }
+
 }

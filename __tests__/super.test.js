@@ -5,6 +5,8 @@ import AgeCalc from '../src/super.js';
 
 describe('AgeCalc', () => {
     let earthAge = new AgeCalc(35);
+    let passedAge = new AgeCalc(25);
+    let diff = earthAge - passedAge;
 
     test('should create a class object for age on Earth', () => {
         expect(earthAge.age).toEqual(35);
@@ -26,17 +28,13 @@ describe('AgeCalc', () => {
         expect(earthAge.jupiter()).toBeCloseTo(2.95);
     });
 
-    test('should calculate number of years passed since last birthday on earth', () => {
-        let passedAge = new AgeCalc(25);
-        let diff = earthAge - passedAge;
+    test('should calculate number of years passed since last birthday on Earth', () => {
         expect(earthAge.ageDifference()).toEqual(10);
     });
 
     test('should calculate number of years passed since last birthday on Mercury', () => {
-        let passedAge = new AgeCalc(25);
-        let diff = earthAge - passedAge;
         let mercuryDiff = diff / .24;
-        expect(earthAge.ageDifference()).toBeCloseTo(41.67);
+        expect(earthAge.ageDiffMercury()).toBeCloseTo(41.67);
     });
 
 });
