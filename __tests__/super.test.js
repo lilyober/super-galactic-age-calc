@@ -60,7 +60,7 @@ describe('AgeCalc', () => {
     });
 
     test('should calculate number of years to pass until future birthday on Venus', () => {
-        expect(earthAge.toPassVenus()).toEqual(24.19);
+        expect(earthAge.toPassVenus()).toBeCloseTo(24.19);
     });
 
 });

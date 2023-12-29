@@ -62,7 +62,9 @@ export default class AgeCalc {
     }
 
     toPassVenus() {
-        
+        let futureAge = 50;
+        let yearsUntil = futureAge - this.age;
+        return yearsUntil / .62;
     }
 
 }
