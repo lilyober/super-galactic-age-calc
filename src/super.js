@@ -73,4 +73,8 @@ export default class AgeCalc {
         return yearsUntil / 1.88;
     }
 
+    toPassJupiter() {
+        
+    }
+
 }

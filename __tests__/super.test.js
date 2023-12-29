@@ -67,4 +67,8 @@ describe('AgeCalc', () => {
         expect(earthAge.toPassMars()).toBeCloseTo(7.98);
     });
 
+    test('should calculate number of years to pass until future birthday on Jupiter', () => {
+        expect(earthAge.toPassJupiter()).toBeCloseTo(1.26);
+    });
+
 });
