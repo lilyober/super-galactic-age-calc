@@ -28,7 +28,12 @@ describe('AgeCalc', () => {
 
     test('should calculate number of years passed since last birthday', () => {
         let passedAge = new AgeCalc(25);
+        let diff = earthAge - passedAge;
         expect(earthAge.ageDifference()).toEqual(10);
+        expect(earthAge.ageDifference()).toBeCloseTo(41.67);
+        expect(earthAge.ageDifference()).toBeCloseTo(16.13);
+        expect(earthAge.ageDifference()).toBeCloseTo(5.32);
+        expect(earthAge.ageDifference()).toBeCloseTo(0.84);
     });
 
 });
