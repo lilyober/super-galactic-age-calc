@@ -74,7 +74,9 @@ export default class AgeCalc {
     }
 
     toPassJupiter() {
-        
+        let futureAge = 50;
+        let yearsUntil = futureAge - this.age;
+        return yearsUntil / 11.86;
     }
 
 }
