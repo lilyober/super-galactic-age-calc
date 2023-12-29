@@ -67,4 +67,8 @@ export default class AgeCalc {
         return yearsUntil / .62;
     }
 
+    toPassMars() {
+        
+    }
+
 }
