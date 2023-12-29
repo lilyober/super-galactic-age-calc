@@ -20,7 +20,9 @@ export default class AgeCalc {
     }
 
     ageDifference() {
-
+        let passedAge = 25;
+        let diff = this.age - passedAge;
+        return diff;
     }
 
 }
