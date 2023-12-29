@@ -25,10 +25,14 @@ export default class AgeCalc {
         return diff;
     }
 
-    ageDiffMercury (){
+    ageDiffMercury() {
         let passedAge = 25;
         let diff = this.age - passedAge;
         return diff / .24;
+    }
+
+    ageDiffVenus() {
+
     }
 
 }

@@ -33,8 +33,11 @@ describe('AgeCalc', () => {
     });
 
     test('should calculate number of years passed since last birthday on Mercury', () => {
-        let mercuryDiff = diff / .24;
         expect(earthAge.ageDiffMercury()).toBeCloseTo(41.67);
+    });
+
+    test('should calculate number of years passed since last birthday on Venus', () => {
+        expect(earthAge.ageDiffVenus()).toBeCloseTo(16.13);
     });
 
 });
