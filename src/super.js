@@ -61,4 +61,8 @@ export default class AgeCalc {
         return yearsUntil / .24;
     }
 
+    toPassVenus() {
+        
+    }
+
 }

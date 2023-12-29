@@ -59,4 +59,8 @@ describe('AgeCalc', () => {
         expect(earthAge.toPassMercury()).toEqual(62.5);
     });
 
+    test('should calculate number of years to pass until future birthday on Venus', () => {
+        expect(earthAge.toPassVenus()).toEqual(24.19);
+    });
+
 });
