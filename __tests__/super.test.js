@@ -44,4 +44,8 @@ describe('AgeCalc', () => {
         expect(earthAge.ageDiffMars()).toBeCloseTo(5.32);
     });
 
+    test('should calculate number of years passed since last birthday on Jupiter', () => {
+        expect(earthAge.ageDiffJupiter()).toBeCloseTo(0.84);
+    });
+
 });

@@ -43,4 +43,8 @@ export default class AgeCalc {
         return diff / 1.88;
     }
 
+    ageDiffJupiter() {
+        
+    }
+
 }
