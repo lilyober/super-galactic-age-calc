@@ -68,7 +68,9 @@ export default class AgeCalc {
     }
 
     toPassMars() {
-        
+        let futureAge = 50;
+        let yearsUntil = futureAge - this.age;
+        return yearsUntil / 1.88;
     }
 
 }
