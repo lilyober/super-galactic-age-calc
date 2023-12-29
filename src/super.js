@@ -56,7 +56,9 @@ export default class AgeCalc {
     }
 
     toPassMercury() {
-        
+        let futureAge = 50;
+        let yearsUntil = futureAge - this.age;
+        return yearsUntil / .24;
     }
 
 }
