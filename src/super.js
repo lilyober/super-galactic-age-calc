@@ -49,4 +49,8 @@ export default class AgeCalc {
         return diff / 11.86;
     }
 
+    toPass() {
+      
+    }
+
 }

@@ -48,4 +48,10 @@ describe('AgeCalc', () => {
         expect(earthAge.ageDiffJupiter()).toBeCloseTo(0.84);
     });
 
+    test('should calculate number of years to pass until future birthday on Earth', () => {
+        let futureAge = new AgeCalc(50);
+        let yearsUntil = futureAge - earthAge;
+        expect(earthAge.toPass()).toEqual(15);
+    });
+
 });
