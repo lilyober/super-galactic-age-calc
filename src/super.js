@@ -38,7 +38,9 @@ export default class AgeCalc {
     }
 
     ageDiffMars() {
-
+        let passedAge = 25;
+        let diff = this.age - passedAge;
+        return diff / 1.88;
     }
 
 }
